@@ -68,22 +68,26 @@ body {
 
 .video-item:hover {
   opacity: 0.5;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
+
 .video-item {
   position: relative;
 }
 .logo-yt img {
-  width: 250px;
+  width: 150px;
 }
 .logo-yt {
   position: absolute;
   cursor: pointer;
   opacity: 0;
-  top: 15%;
-  left: 25%;
-  transition: all 0.3s;
+
+  transition: all 0.3s ease;
   mix-blend-mode: screen;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
 }
 .video-item:hover .logo-yt {
   display: block;
@@ -125,7 +129,7 @@ body {
   margin-bottom: 20px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .projects {
     display: block;
     margin-left: 300px;
@@ -136,7 +140,7 @@ body {
     font-size: 12px;
   }
   .logo-yt img {
-    width: 180px;
+    width: 130px;
   }
 }
 
@@ -177,11 +181,13 @@ body {
   }
 
   .logo-yt {
-    top: 25%;
-    left: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    text-align: center;
   }
   .logo-yt img {
-    width: 220px;
+    width: 150px;
   }
 
   .artist,
